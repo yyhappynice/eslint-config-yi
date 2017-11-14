@@ -146,7 +146,7 @@ module.exports = {
     // for in 内部必须有 hasOwnProperty
     'guard-for-in': 'off',
     // 禁止使用 alert
-    'no-alert': 'off',
+    'no-alert': 'error',
     // 禁止使用 caller 或 callee
     'no-caller': 'error',
     // switch 的 case 内有变量定义的时候，必须使用大括号将 case 内变成一个代码块
@@ -358,9 +358,9 @@ module.exports = {
     'no-use-before-define': [
       'error',
       {
-          functions: false,
-          classes: false,
-          variables: false
+        functions: false,
+        classes: false,
+        variables: false
       }
     ],
 
@@ -426,10 +426,7 @@ module.exports = {
       'last'
     ],
     // 用作对象的计算属性时，中括号内的首尾禁止有空格
-    'computed-property-spacing': [
-      'error',
-      'never'
-    ],
+    'computed-property-spacing': ['error', 'never'],
     // 限制 this 的别名
     'consistent-this': 'off',
     // 文件最后一行必须有一个空行
@@ -451,7 +448,7 @@ module.exports = {
     'id-length': 'off',
     // 限制变量名必须匹配指定的正则表达式
     'id-match': 'off',
-    // 一个缩进必须用四个空格替代
+    // 一个缩进必须用2个空格替代
     'indent': ['error', 2],
     // jsx 中的属性必须用双引号
     'jsx-quotes': 'off',
@@ -576,7 +573,7 @@ module.exports = {
       // 强制函数中的变量在一起声明或分开声明
       'one-var': 'off',
       // 变量申明必须每行一个
-      'one-var-declaration-per-line': 'off'
+      'one-var-declaration-per-line': 'off',
       // 必须使用 x = x + y 而不是 x += y
       'operator-assignment': 'off',
       // 强制操作符使用一致的换行符风格
@@ -599,13 +596,7 @@ module.exports = {
       // 必须使用 jsdoc 风格的注释
       'require-jsdoc': 'off',
       // 结尾必须无分号
-      'semi': [
-        'error',
-        'never',
-        {
-          omitLastInOneLineBlock: true
-        }
-      ],
+      'semi': ['error', 'never'],
       // 强制分号前后有空格
       'semi-spacing': 'off',
       // 分号位置
