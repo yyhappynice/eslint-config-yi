@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-yi",
+  "version": "1.0.0",
+  "description": "yi-cli eslint config",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lint && npm test",
+    "test": "node ./test/index.js",
+    "lint": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyhappynice/eslint-config-yi.git"
+  },
+  "keywords": [
+    "eslint",
+    "yi-cli",
+    "config",
+    "javascript",
+    "react",
+    "vue"
+  ],
+  "author": "yyhappynice@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yyhappynice/eslint-config-yi/issues"
+  },
+  "homepage": "https://github.com/yyhappynice/eslint-config-yi#readme",
+  "dependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-vue": "^2.1.0"
+  },
+  "devDependencies": {
+    "node-symbols": "0.0.4"
+  }
+}
