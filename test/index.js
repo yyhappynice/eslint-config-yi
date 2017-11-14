@@ -12,8 +12,8 @@ const goodReport = cli.executeOnFiles([
 ])
 
 const badReport = cli.executeOnFiles([
-    './**/bad.js',
-    './**/bad.vue'
+  './**/bad.js',
+  './**/bad.vue'
 ])
 
 goodReport.results.forEach((goodReportForOneFile) => {
@@ -21,7 +21,7 @@ goodReport.results.forEach((goodReportForOneFile) => {
 })
 
 badReport.results.forEach((badReportForOneFile) => {
-    assert(badReportForOneFile.errorCount > 0, `${badReportForOneFile.filePath} should have at least one error`)
+  assert(badReportForOneFile.errorCount > 0, `${badReportForOneFile.filePath} should have at least one error`)
 })
 
 

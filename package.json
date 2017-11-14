@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run lint && npm test",
     "test": "node ./test/index.js",
-    "lint": "node ./test/index.js"
+    "lint": "eslint --fix --ext .js,.vue --ignore-pattern bad.* ."
   },
   "repository": {
     "type": "git",
