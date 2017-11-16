@@ -49,4 +49,6 @@ module.exports = {
 }
 ```
 
+### License
 
+[MIT](https://github.com/yyhappynice/eslint-config-yi/blob/master/LICENSE)
