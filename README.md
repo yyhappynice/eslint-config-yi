@@ -14,10 +14,10 @@ $ npm install eslint-config-yi babel-eslint -D
 
 ```js
 module.exports = {
-  extends: [
-    'eslint-config-yi',
+  "extends": [
+    "eslint-config-yi",
   ],
-  rules: {
+  "rules": {
     //Your own configuration for cover my settings
   }
 }
@@ -27,10 +27,10 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: [
-    'eslint-config-yi/vue',
+  "extends": [
+    "eslint-config-yi/vue",
   ],
-  rules: {
+  "rules": {
     //Your own configuration for cover my settings
   }
 }
@@ -40,10 +40,10 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: [
-    'eslint-config-yi/react',
+  "extends": [
+    "eslint-config-yi/react",
   ],
-  rules: {
+  "rules": {
     //Your own configuration for cover my settings
   }
 }
