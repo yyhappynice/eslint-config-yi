@@ -13,7 +13,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      createClass: "createReactClass", // Regex for Component Factory to use, default to "createReactClass"
+      createClass: 'createReactClass', // Regex for Component Factory to use, default to "createReactClass"
       pragma: 'React', // React 的指令名称，默认为 'React'
       version: '16.0' // React 的版本号，默认为最新的稳定版
     }
@@ -109,14 +109,14 @@ module.exports = {
     'react/jsx-curly-spacing': [
       'error',
       {
-          when: 'never',
-          attributes: {
-              allowMultiline: true
-          },
-          children: true,
-          spacing: {
-              objectLiterals: 'never'
-          }
+        when: 'never',
+        attributes: {
+          allowMultiline: true
+        },
+        children: true,
+        spacing: {
+          objectLiterals: 'never'
+        }
       }
     ],
     // props 与 value 之间的等号前后禁止有空格
