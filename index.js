@@ -30,7 +30,7 @@ module.exports = {
   root: true,
   rules: {
     // 禁止 for 循环出现方向错误的循环，比如 for (i = 0; i < 10; i--)
-    'for-direction': 'error',
+    //'for-direction': 'error',
     // 可以将 await 写在循环里，因为这样就无法同时发送多个异步请求了
     'no-await-in-loop': 'off',
     // 禁止与负零进行比较
@@ -64,7 +64,7 @@ module.exports = {
     // 禁止将一个函数申明重新赋值
     'no-func-assign': 'error',
     //禁止在 if 内出现函数申明或使用 var 定义变量
-    'no-inner-declarations': ['error', 'both'],
+    'no-inner-declarations': 'off',
     // 禁止出现非法的正则表达式
     'no-invalid-regexp': 'error',
     // 禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中
@@ -205,7 +205,6 @@ module.exports = {
     'no-multi-spaces': [
       'error',
       {
-        ignoreEOLComments: true,
         exceptions: {
           Property: true,
           BinaryExpression: false,
@@ -322,23 +321,7 @@ module.exports = {
     // 禁止使用指定的全局变量
     'no-restricted-globals': 'off',
     // 禁止变量名与上层作用域内的定义过的变量重复
-    'no-shadow': [
-      'error',
-      {
-        builtinGlobals: false,
-        hoist: 'functions',
-        allow: [
-          'resolve',
-          'reject',
-          'done',
-          'cb',
-          'callback',
-          'error',
-          'err',
-          'e'
-        ]
-      }
-    ],
+    'no-shadow': 'off',
     // 禁止使用保留字作为变量名
     'no-shadow-restricted-names': 'error',
     // 禁止使用未定义的变量
@@ -374,7 +357,7 @@ module.exports = {
     // callback 中的 error 必须被处理
     'handle-callback-err': 'error',
     // 禁止直接使用 Buffer
-    'no-buffer-constructor': 'error',
+    //'no-buffer-constructor': 'error',
     // 相同类型的 require 必须放在一起
     'no-mixed-requires': 'off',
     // 禁止直接 new require('foo')
@@ -629,13 +612,13 @@ module.exports = {
     // 注释前后必须有空格
     'spaced-comment': 'off',
     // case 的冒号前禁止有空格，冒号后必须有空格
-    'switch-colon-spacing': [
-      'error',
-      {
-        after: true,
-        before: false
-      }
-    ],
+    // 'switch-colon-spacing': [
+    //   'error',
+    //   {
+    //     after: true,
+    //     before: false
+    //   }
+    // ],
     // 模版字符串的 tag 之后禁止有空格，比如 tag`Hello World`
     'template-tag-spacing': 'off',
     // 文件开头禁止有 BOM

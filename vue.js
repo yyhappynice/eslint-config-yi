@@ -16,52 +16,52 @@ module.exports = {
     // 禁止重复的二级键名
     'vue/no-dupe-keys': 'off',
     // 禁止出现语法错误
-    'vue/no-parsing-error': 'error',
+    'vue/no-parsing-error': 'off',
     // 禁止覆盖保留字
-    'vue/no-reservered-keys': 'error',
+    'vue/no-reservered-keys': 'off',
     // 组件的 data 属性的值必须是一个函数
     'vue/no-shared-component-data': 'off',
     // 禁止 <template> 使用 key 属性
     'vue/no-template-key': 'off',
     // render 函数必须有返回值
-    'vue/require-render-return': 'error',
+    'vue/require-render-return': 'off',
     // prop 的默认值必须匹配它的类型
     'vue/require-valid-default-prop': 'off',
     // 计算属性必须有返回值
-    'vue/return-in-computed-property': 'error',
+    'vue/return-in-computed-property': 'off',
     // template 的根节点必须合法
-    'vue/valid-template-root': 'error',
+    'vue/valid-template-root': 'off',
     // v-bind 指令必须合法
-    'vue/valid-v-bind': 'error',
+    'vue/valid-v-bind': 'off',
     // v-cloak 指令必须合法
-    'vue/valid-v-cloak': 'error',
+    'vue/valid-v-cloak': 'off',
     // v-else-if 指令必须合法
-    'vue/valid-v-else-if': 'error',
+    'vue/valid-v-else-if': 'off',
     // v-else 指令必须合法
-    'vue/valid-v-else': 'error',
+    'vue/valid-v-else': 'off',
     // v-for 指令必须合法
-    'vue/valid-v-for': 'error',
+    'vue/valid-v-for': 'off',
     // v-html 指令必须合法
-    'vue/valid-v-html': 'error',
+    'vue/valid-v-html': 'off',
     // v-if 指令必须合法
-    'vue/valid-v-if': 'error',
+    'vue/valid-v-if': 'off',
     // v-model 指令必须合法
-    'vue/valid-v-model': 'error',
+    'vue/valid-v-model': 'off',
     // v-on 指令必须合法
-    'vue/valid-v-on': 'error',
+    'vue/valid-v-on': 'off',
     // v-once 指令必须合法
-    'vue/valid-v-once': 'error',
+    'vue/valid-v-once': 'off',
     // v-pre 指令必须合法
-    'vue/valid-v-pre': 'error',
+    'vue/valid-v-pre': 'off',
     // v-show 指令必须合法
-    'vue/valid-v-show': 'error',
+    'vue/valid-v-show': 'off',
     // v-text 指令必须合法
-    'vue/valid-v-text': 'error',
+    'vue/valid-v-text': 'off',
 
     // html 的结束标签必须符合规定
     'vue/html-end-tags': 'off',
     // 计算属性禁止包含异步方法
-    'vue/no-async-in-computed-properties': 'error',
+    'vue/no-async-in-computed-properties': 'off',
     // 禁止出现难以理解的 v-if 和 v-for
     'vue/no-confusing-v-for-v-if': 'off',
     // 禁止出现重复的属性
@@ -82,7 +82,7 @@ module.exports = {
     // 限制自定义组件的属性风格
     'vue/attribute-hyphenation': 'off',
     // html 属性值必须用双引号括起来
-    'vue/html-quotes': 'error',
+    'vue/html-quotes': 'off',
     // 没有内容时，组件必须自闭和
     'vue/html-self-closing': 'off',
     // 限制每行允许的最多属性数量
@@ -90,7 +90,7 @@ module.exports = {
     // 限制组件的 name 属性的值的风格
     'vue/name-property-casing': 'off',
     // 禁止出现连续空格
-    'vue/no-multi-spaces': 'error',
+    //'vue/no-multi-spaces': 'error',
     // 限制 v-bind 的风格
     'vue/v-bind-style': 'off',
     // 限制 v-on 的风格

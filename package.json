@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yi",
-  "version": "0.0.8",
+  "version": "0.0.4",
   "description": "yi-cli eslint config",
   "main": "index.js",
   "scripts": {
